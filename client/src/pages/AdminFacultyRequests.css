@@ -1,0 +1,62 @@
+.requests-banner {
+    background: linear-gradient(90deg, #6f42c1, #e83e8c); /* Purple to Pink gradient */
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.requests-banner h3, .requests-banner p {
+    margin: 0;
+}
+
+.requests-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.request-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto; /* Details on left, buttons on right */
+    gap: 1.5rem;
+    align-items: center;
+}
+.request-card:last-child {
+    margin-bottom: 0;
+}
+
+.request-details h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.request-details p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.request-actions button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-approve {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-reject {
+    background-color: #dc3545;
+    color: white;
+}

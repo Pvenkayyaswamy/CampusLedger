@@ -1,0 +1,97 @@
+.page-header1 {
+    background: linear-gradient(135deg, #195ef2, #9B5DE5);
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-header-stats {
+    display: flex;
+    gap: 2rem;
+}
+.page-header-stat p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.page-header-stat h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.section-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.activity-info .icon {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.activity-details p {
+    margin: 0;
+    font-weight: 500;
+}
+.activity-details span {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.activity-status .points {
+    font-weight: bold;
+    color: #28a745;
+    margin-right: 1rem;
+}
+
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+.status-badge.verified { background-color: #e6f7f2; color: #00875a; }
+.status-badge.pending { background-color: #fff8e1; color: #ffab00; }
+.status-badge.rejected { background-color: #ffebe5; color: #de350b; }
+
+.activity-actions button {
+    background: none;
+    border: 1px solid #e0e0e0;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}

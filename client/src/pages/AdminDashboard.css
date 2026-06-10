@@ -1,0 +1,90 @@
+/* Stat Cards Section */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* More responsive cards */
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.stat-card .info p {
+    margin: 0 0 0.5rem 0; /* Margin below the text label */
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.stat-card .info h4 {
+    margin: 0;
+    font-size: 2.5rem; /* Larger number */
+    font-weight: 700;
+}
+
+
+/* Other sections */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.section-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.section-card h4 {
+    margin: 0 0 1.5rem 0;
+}
+
+.progress-bar-container {
+    margin-bottom: 1.25rem;
+}
+
+.progress-bar-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.activity-feed-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.activity-feed-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.activity-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #6c757d;
+}
+
+.activity-details p { margin: 0; }
+.activity-details .time { font-size: 0.85rem; color: #6c757d; }
+

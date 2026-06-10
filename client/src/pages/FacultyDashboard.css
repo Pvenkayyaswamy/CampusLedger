@@ -1,0 +1,322 @@
+/* General Page Styling */
+.page-header {
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.page-header h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.8rem;
+    color: #333; /* Darker text for headers */
+}
+
+.page-header p {
+    color: #6c757d;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+    background: linear-gradient(to right, #007BFF, #6A11CB); /* Blue to Purple gradient */
+    color: white;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-banner::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.welcome-banner h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.welcome-banner p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    max-width: 70%;
+}
+
+.faculty-chips {
+    display: flex;
+    gap: 10px;
+}
+
+.faculty-chip {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adjusted minmax for better fit */
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between;
+    min-height: 120px; /* Ensure consistent card height */
+    position: relative; /* For the small trend indicator */
+}
+
+.stat-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stat-card .card-header p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.stat-card .card-header .trend {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #28a745; /* Green for positive trend */
+    display: flex;
+    align-items: center;
+}
+.stat-card .card-header .trend i {
+    margin-left: 5px;
+}
+
+.stat-card .card-value {
+    font-size: 2.5rem; /* Larger value */
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Recent Submissions and Quick Actions */
+.dashboard-sections-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Recent Submissions wider than Quick Actions */
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.section-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.section-card h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* Recent Submissions List */
+.submission-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submission-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.submission-item:last-child {
+    border-bottom: none;
+}
+
+.submission-avatar {
+    width: 45px;
+    height: 45px;
+    background-color: #007bff; /* Blue avatar background */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.submission-details {
+    flex-grow: 1;
+}
+
+.submission-details h5 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.submission-details p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.submission-tag {
+    background-color: #fff3cd; /* Light yellow for pending */
+    color: #856404; /* Darker yellow text */
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
+.view-all-link {
+    display: block;
+    text-align: right;
+    margin-top: 15px;
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Quick Actions */
+.quick-actions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quick-action-btn {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.quick-action-btn:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+}
+
+/* Department Performance Overview */
+.department-performance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.department-year-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.department-year-card h5 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.department-year-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.department-year-card li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.department-year-card li span:first-child {
+    font-weight: 500;
+}
+
+.department-year-card li span:last-child {
+    font-weight: 600;
+    color: #007bff; /* Blue for values */
+}
+
+
+/* Points Allocation Guide */
+.points-guide-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.points-category-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.points-category-card h5 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.points-category-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.points-category-card li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.points-category-card li:last-child {
+    margin-bottom: 0;
+}

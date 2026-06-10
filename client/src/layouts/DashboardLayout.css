@@ -1,0 +1,126 @@
+/* Using CSS variables for layout, not theme colors */
+:root {
+    --background-color: #f7f8fc;
+    --text-primary: #333;
+    --text-secondary: #6c757d;
+}
+
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+/* --- Main Sidebar Structure --- */
+.sidebar {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav a, .logout-btn {
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-left: 4px solid transparent;
+}
+
+.sidebar-nav a:hover, .logout-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-nav a i, .logout-btn i {
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+
+.sidebar-footer {
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 20px;
+}
+
+/* --- Student Theme (Orange) --- */
+.student-theme .sidebar {
+    background: linear-gradient(135deg, #195ef2, #9B5DE5);
+    color: #ffffff;
+}
+.student-theme .sidebar-nav a { color: #ffffff; }
+.student-theme .sidebar-nav a.active { background-color: #ffffff; color: #195ef2; }
+.student-theme .sidebar-footer { border-top-color: rgba(255, 255, 255, 0.2); }
+.student-theme .logout-btn { color: #ffffff; }
+
+/* --- Faculty Theme (Blue/Purple Gradient) --- */
+.faculty-theme .sidebar {
+    background: linear-gradient(135deg, #007BFF, #9B5DE5);
+    color: #E0E0E0;
+}
+.faculty-theme .sidebar-nav a { color: #E0E0E0; }
+.faculty-theme .sidebar-nav a.active { background-color: #ffffff;color: #007BFF; }
+.faculty-theme .sidebar-footer { border-top-color: rgba(255, 255, 255, 0.1); }
+.faculty-theme .logout-btn { color: #E0E0E0; }
+
+/* --- NEW: Admin Theme (Green) --- */
+.admin-theme .sidebar {
+    background: linear-gradient(140deg, #6f42c1, #e83e8c); /* Dark Green */
+    color: #ffffff;
+}
+.admin-theme .sidebar-nav a { color: #ffffff; }
+.admin-theme .sidebar-nav a.active { background-color: #ffffff; color: #6f42c1; }
+.admin-theme .sidebar-footer { border-top-color: rgba(255, 255, 255, 0.2); }
+.admin-theme .logout-btn { color: #ffffff; }
+
+
+/* --- User Info and Logout (Shared by all themes) --- */
+.user-info {
+    padding: 0 10px;
+}
+.user-info .username {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+.user-info .email {
+    margin: 0 0 10px 0;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+.logout-btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px 40px;
+    overflow-y: auto;
+}

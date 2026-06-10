@@ -1,0 +1,107 @@
+.page-header1 {
+    background: linear-gradient(135deg, #195ef2, #9B5DE5);
+    color: rgb(255, 255, 255);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.summary-card .count {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+}
+
+.summary-card .label {
+    margin: 0;
+    color: #6c757d;
+}
+
+.summary-card.approved .count { color: #28a745; }
+.summary-card.pending .count { color: #ffc107; }
+.summary-card.rejected .count { color: #dc3545; }
+.summary-card.total .count { color: #0d6efd; }
+
+.section-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+}
+
+.response-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.response-item:last-child {
+    border-bottom: none;
+}
+
+.response-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.response-header h5 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.response-status {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.response-status .points {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+.status-badge.approved { background-color: #e6f7f2; color: #00875a; }
+.status-badge.pending, .status-badge.under-review { background-color: #fff8e1; color: #ffab00; }
+.status-badge.rejected { background-color: #ffebe5; color: #de350b; }
+.status-badge.more-info-requested { background-color: #e7f5ff; color: #007bff; }
+
+.response-body p {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.response-body .feedback {
+    background-color: #f8f9fa;
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    font-style: italic;
+}

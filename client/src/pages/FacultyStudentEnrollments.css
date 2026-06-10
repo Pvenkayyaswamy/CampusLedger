@@ -1,0 +1,106 @@
+.enrollments-banner {
+    background: linear-gradient(to right, #007BFF, #6A11CB);
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.enrollments-banner h3, .enrollments-banner p {
+    margin: 0;
+}
+
+.enrollment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.enrollment-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.enrollment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.student-info h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.3rem;
+}
+
+.student-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.new-enrollment-tag {
+    background-color: #17a2b8;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.enrollment-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+.detail-item p {
+    margin: 0 0 0.25rem 0;
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+.detail-item h5 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.enrollment-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.enrollment-actions button, .enrollment-actions a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-approve {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-reject {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-details {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ccc;
+}

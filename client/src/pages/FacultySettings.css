@@ -1,0 +1,99 @@
+.settings-header-banner {
+    background: linear-gradient(to right, #007BFF, #6A11CB); /* Purple Gradient */
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.settings-header-banner h3, .settings-header-banner p {
+    margin: 0;
+}
+
+.settings-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr; /* Left menu, right content */
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.settings-submenu {
+    border-right: 1px solid #f0f0f0;
+    padding-right: 2rem;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+}
+
+.submenu-item.active {
+    background-color: #f8f9fa;
+    color: #007BFF; /* Faculty Theme Color */
+    font-weight: 600;
+}
+
+.submenu-item i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.settings-content h4 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-group input[readonly] {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+.form-actions {
+    margin-top: 2rem;
+}
+
+.btn-save {
+    background-color: #F26419; /* Orange color for action button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+}

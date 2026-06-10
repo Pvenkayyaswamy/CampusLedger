@@ -1,0 +1,95 @@
+.page-header1 {
+    background: linear-gradient(135deg, #195ef2, #9B5DE5);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header h2, .page-header p {
+    margin: 0;
+}
+
+.add-profile-btn {
+    background-color: white;
+    color: #4a148c;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.profile-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.profile-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.profile-card-header .icon {
+    font-size: 2rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+    color: white;
+}
+
+.profile-card-header .edit-icon {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.profile-card h4, .profile-card .username {
+    margin: 0;
+}
+
+.profile-card .username {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.profile-card-stats {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.profile-card-stat p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 0.25rem 0;
+}
+
+.profile-card-stat span {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.view-profile-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    border: none;
+}

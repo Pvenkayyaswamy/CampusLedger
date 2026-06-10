@@ -1,0 +1,441 @@
+.settings-banner {
+    background: linear-gradient(90deg, #6f42c1, #e83e8c); /* Green Gradient */
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.settings-banner h3, .settings-banner p {
+    margin: 0;
+}
+
+.settings-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr; /* Left menu, right content */
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.settings-submenu {
+    border-right: 1px solid #f0f0f0;
+    padding-right: 2rem;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.submenu-item.active {
+    background-color: #f5e8f4; /* Light green */
+    color: #6f42c1; /* Dark Green */
+    font-weight: 600;
+}
+
+.submenu-item i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.settings-content h4 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-actions {
+    margin-top: 2rem;
+}
+
+.btn-save {
+    background-color: #6f42c1;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.branch-list {
+    list-style: none;
+    padding: 0;
+}
+
+.branch-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.btn-delete {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.add-branch-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+.add-branch-form input {
+    flex-grow: 1;
+}
+
+/* --- NEW STYLES for Faculty Management --- */
+.department-summary-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+}
+
+.department-summary-card h5 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.department-summary-card p {
+    margin: 0;
+    color: #6c757d;
+}
+
+.btn-view-info {
+    background-color: #e8f5e9;
+    color: #198754;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.faculty-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.faculty-details-table th, .faculty-details-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.btn-remove {
+    background-color: #ffebe5;
+    color: #de350b;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .settings-banner {
+    background: linear-gradient(90deg, #198754, #20c997); /* Green Gradient *
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.settings-banner h3, .settings-banner p {
+    margin: 0;
+}
+
+.settings-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr; /* Left menu, right content *
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.settings-submenu {
+    border-right: 1px solid #f0f0f0;
+    padding-right: 2rem;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.submenu-item.active {
+    background-color: #e8f5e9; /* Light green *
+    color: #198754; /* Dark Green *
+    font-weight: 600;
+}
+
+.submenu-item i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.settings-content h4 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-actions {
+    margin-top: 2rem;
+}
+
+.btn-save {
+    background-color: #198754;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.branch-list {
+    list-style: none;
+    padding: 0;
+}
+
+.branch-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.btn-delete {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.add-branch-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+/* ... keep all your existing CSS above this line ... *
+
+/* --- NEW STYLES for Department Configuration --- *
+.branch-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.branch-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    background-color: #f8f9fa;
+}
+
+.branch-list-item span {
+    font-weight: 500;
+}
+
+.btn-delete {
+    background: none;
+    border: none;
+    color: #dc3545; /* Red for delete *
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.add-branch-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.add-branch-form input {
+    flex-grow: 1; /* Make the input field take up available space *
+}
+
+
+/* ... (keep all your existing CSS above this line) ... *
+
+/* --- NEW STYLES for User Management --- *
+.department-summary-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+}
+
+.department-summary-card h5 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.department-summary-card p {
+    margin: 0;
+    color: #6c757d;
+}
+
+.btn-view-info {
+    background-color: #e7f5ff;
+    color: #007bff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.faculty-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.faculty-details-table th, .faculty-details-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.btn-remove {
+    background-color: #ffebe5;
+    color: #de350b;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ */

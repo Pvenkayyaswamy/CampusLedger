@@ -1,0 +1,69 @@
+.stats-banner {
+    background: linear-gradient(90deg, #6f42c1, #e83e8c); /* Purple to Pink gradient */
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.stats-banner h3, .stats-banner p {
+    margin: 0;
+}
+
+.stats-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-overview-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.stat-overview-card h4 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 1rem;
+}
+
+.main-stat {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.main-stat .value {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+.main-stat .label {
+    margin: 0;
+    color: #6c757d;
+}
+
+.sub-stats-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-stat-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+}
+
+.sub-stat-item .label {
+    color: #6c757d;
+}
+
+.sub-stat-item .value {
+    font-weight: 600;
+}

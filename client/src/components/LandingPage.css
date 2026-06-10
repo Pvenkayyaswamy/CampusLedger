@@ -1,0 +1,282 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Helper Class */
+.container {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Section Heading Styles */
+.section-title {
+    font-size: 2.5rem;
+    color: #003d6b;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #003d6b;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1de9b6, #00bfa5, #00796b);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.hero-buttons .btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #00796b;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #00796b;
+}
+
+/* Challenge Section */
+.challenge-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.challenge-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 45%;
+    border: 1px solid #e0e0e0;
+}
+
+.challenge-card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #003d6b;
+}
+
+.challenge-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.challenge-card li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.challenge-card li i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.problem i { color: #dc3545; }
+.solution i { color: #28a745; }
+
+
+/* Key Features Section */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: left;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin: 0 0 10px 0;
+}
+
+/* Impact & Benefits Section */
+.impact-list {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.impact-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.impact-item i {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-right: 20px;
+}
+
+/* Roles Section */
+.roles-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.role-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 30%;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.role-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.role-card p {
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+.role-card i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.role-card a {
+    display: block;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.role-card a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #003d6b;
+    color: white;
+}
+
+.cta .btn {
+    background-color: #1de9b6;
+    color: #003d6b;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .challenge-grid, .roles-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .challenge-card, .role-card {
+        width: 90%;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 { font-size: 2.5rem; }
+}

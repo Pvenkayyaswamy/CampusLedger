@@ -1,0 +1,21 @@
+.profile-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px; /* row-gap column-gap */
+}
+.info-field label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 5px;
+}
+.info-field p {
+    font-weight: 500;
+    margin: 0;
+}

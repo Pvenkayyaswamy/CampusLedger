@@ -1,0 +1,168 @@
+.auth-container {
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+.back-to-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.back-to-home i {
+    margin-right: 8px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    padding: 20px 40px 40px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header i {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.auth-header h1 {
+    font-size: 1.8rem;
+    margin: 10px 0 5px 0;
+    color: #003d6b;
+}
+
+.auth-header p {
+    color: #6c757d;
+    margin: 0;
+}
+
+.auth-tabs {
+    display: flex;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.auth-tab {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.auth-tab.active {
+    background-color: white;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+.auth-form .form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #495057;
+    font-size: 0.9rem;
+}
+
+.auth-form input, .auth-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important */
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.auth-form .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #003d6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+/* ADD THIS STYLE FOR ERROR MESSAGES */
+.error-message {
+    color: #dc3545; /* A standard red color for errors */
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* ... all your existing css ... */
+
+/* --- NEW STYLES FOR BRANCH SELECTION --- */
+.branch-search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.branch-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.branch-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.branch-item input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto; /* Override default width */
+}
