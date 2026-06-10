@@ -26,8 +26,7 @@ node index.js
 
 Runs at:
 
-http://localhost:5000
-
+https://campusledger-wcgr.onrender.com
 
 
 \## Mobile App
@@ -120,8 +119,7 @@ Frontend URL:
 http://localhost:3000
 
 Backend URL:
-http://localhost:5000
-
+https://campusledger-wcgr.onrender.com
 ## Test Accounts
 
 student@test.com / password
