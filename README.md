@@ -12,8 +12,7 @@ npm start
 
 Runs at:
 
-http://localhost:3000
-
+https://campusledger-psi.vercel.app/
 
 
 \## Backend
@@ -116,8 +115,7 @@ cd server
 node index.js
 
 Frontend URL:
-http://localhost:3000
-
+https://campusledger-psi.vercel.app/
 Backend URL:
 https://campusledger-wcgr.onrender.com
 ## Test Accounts
